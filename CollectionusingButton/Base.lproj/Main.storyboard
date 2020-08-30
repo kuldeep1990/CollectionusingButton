@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15508"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CollectionusingButton" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="LFK-JV-WJj">
+                                <rect key="frame" x="182" y="348" width="50" height="200"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="plb-66-XaV">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="GK2-zI-Ye9"/>
+                                            <constraint firstAttribute="width" constant="50" id="wZZ-4g-6FE"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="apple_logo"/>
+                                        <state key="selected" image="fill_apple_logo"/>
+                                        <connections>
+                                            <action selector="multipleButtonTaped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R2d-uJ-hM9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zTy-Qw-U17">
+                                        <rect key="frame" x="0.0" y="50" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="mmH-Sj-BOS"/>
+                                            <constraint firstAttribute="width" constant="50" id="zFQ-38-Vef"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="chat_icon"/>
+                                        <state key="selected" image="chat_fill_icon"/>
+                                        <connections>
+                                            <action selector="multipleButtonTaped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C5M-9k-dV2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1mE-jO-zSb">
+                                        <rect key="frame" x="0.0" y="100" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="ClT-pG-iDA"/>
+                                            <constraint firstAttribute="height" constant="50" id="uri-Na-BUX"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="home_logo"/>
+                                        <state key="selected" image="home_fill_logo"/>
+                                        <connections>
+                                            <action selector="multipleButtonTaped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YYr-gE-OQn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXk-R2-p0w">
+                                        <rect key="frame" x="0.0" y="150" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="4NH-nX-5xy"/>
+                                            <constraint firstAttribute="height" constant="50" id="C8K-um-Pkh"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="trash" catalog="system"/>
+                                        <state key="selected" image="trash.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="multipleButtonTaped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fVy-4o-ayS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="tintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LFK-JV-WJj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dQz-YD-uSf"/>
+                            <constraint firstItem="LFK-JV-WJj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hds-Nd-acK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnapple" destination="plb-66-XaV" id="VLt-MQ-Def"/>
+                        <outletCollection property="btnApple" destination="plb-66-XaV" collectionClass="NSMutableArray" id="ZIR-tt-x6l"/>
+                        <outletCollection property="btnApple" destination="zTy-Qw-U17" collectionClass="NSMutableArray" id="84d-2N-ViI"/>
+                        <outletCollection property="btnApple" destination="1mE-jO-zSb" collectionClass="NSMutableArray" id="aqj-ai-MO4"/>
+                        <outletCollection property="btnApple" destination="cXk-R2-p0w" collectionClass="NSMutableArray" id="3bf-Ym-UUh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="138"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="apple_logo" width="25" height="25"/>
+        <image name="chat_fill_icon" width="24" height="24"/>
+        <image name="chat_icon" width="25" height="25"/>
+        <image name="fill_apple_logo" width="25" height="25"/>
+        <image name="home_fill_logo" width="25" height="25"/>
+        <image name="home_logo" width="25" height="25"/>
+        <image name="trash" catalog="system" width="60" height="64"/>
+        <image name="trash.fill" catalog="system" width="60" height="64"/>
+    </resources>
+</document>
